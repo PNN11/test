@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 .main-menu-block.open {
-    height: 80px;
+    height: 60px;
     transition: 0.5s;
 }
 /*header*/
@@ -293,15 +293,19 @@ main {
 }
 .user-photo-1 {
     background: url("../images/user-photo-1.png") no-repeat;
+    background-size: contain;
 }
 .user-photo-2 {
     background: url("../images/user-photo-2.png") no-repeat;
+    background-size: contain;
 }
 .user-photo-3 {
     background: url("../images/user-photo-3.png") no-repeat;
+    background-size: contain;
 }
 .user-photo-4 {
     background: url("../images/user-photo-4.png") no-repeat;
+    background-size: contain;
 }
 .user-info-name {
     display: inline-block;
@@ -478,6 +482,12 @@ footer {
     .container {
         width: 768px;
     }
+    .main-menu {
+        padding-left: 30px;
+    }
+    .header-top-block-content {
+        padding: 0 24px;
+    }
     .add-new-item {
         margin-left: 52px;
     }
@@ -497,33 +507,35 @@ footer {
         padding-left: 191px;
     }
 }
-@media all and (max-width: 780px) {
+@media all and (max-width: 425px) {
     .container {
-        width: 640px;
+        width: 320px;
     }
     .header-top-block {
-        height: 100px;
+        height: 70px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .header-top-block-content {
-        padding: 0 30px;
+        padding: 0 15px;
     }
     .left-block {
         display: none;
     }
     .menu-icon {
         display: inline-flex;
-        width: 45px;
-        height: 33px;
+        width: 28px;
+        height: 17px;
         background: url("../images/menu-mobile.png") no-repeat;
+        background-size: contain;
         cursor: pointer;
     }
     .logo {
-        width: 86px;
-        height: 54px;
+        width: 43px;
+        height: 27px;
         background: url("../images/logo-mobile.png") no-repeat;
+        background-size: contain;
         margin: 0;
     }
     .page-title {
@@ -531,7 +543,7 @@ footer {
         text-shadow: 0 -1px 0 #000000;
         color: #ffffff;
         font-family: "Arial MT", sans-serif;
-        font-size: 36px;
+        font-size: 20px;
         font-weight: 400;
     }
     .city,
@@ -541,21 +553,29 @@ footer {
         display: none;
     }
     .user-photo {
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
         background: url("../images/user-avatar-mobile.png") no-repeat;
-        margin-right: 50px;
+        background-size: contain;
+        margin-right: 25px;
     }
     .search {
-        width: 40px;
-        height: 43px;
+        width: 20px;
+        height: 22px;
         background: url("../images/search-mobile.png") no-repeat;
+        background-size: contain;
         margin: 0;
+    }
+    main {
+        background-color: white;
+    }
+    .shadow {
+        box-shadow: none;
     }
     .main-menu {
         width: auto;
-        height: 80px;
-        padding: 0 30px;
+        height: 60px;
+        padding: 0 15px;
     }
     .main-menu-block {
         height: 0;
@@ -563,35 +583,37 @@ footer {
         transition: 0.5s;
     }
     .main-menu li a {
-        font-size: 22px;
+        font-size: 16px;
     }
     .menu-item-active::before {
-        width: 105px;
+        width: 53px;
     }
     .right-block h1 {
-        font-size: 60px;
+        font-size: 30px;
         text-shadow: 0 1px 0 #ffffff;
         text-align: center;
-        margin: 40px 80px;
+        margin: 20px 30px;
     }
     .right-block h1 span.desktop {
         display: none;
     }
     .right-block h1 span.mobile {
         display: inline-block;
-        line-height: 60px;
+        line-height: 40px;
         border-bottom: 2px dashed;
+        margin-left: 13px;
     }
     .right-block h1 span.mobile:last-child::after {
-        width: 21px;
-        height: 11px;
-        top: 31px;
-        right: -31px;
+        width: 11px;
+        height: 6px;
+        top: 20px;
+        right: -16px;
         background: url("../images/arrow-mobile.png") no-repeat;
+        background-size: contain;
         cursor: pointer;
     }
     .search-panel {
-        height: 100px;
+        height: 60px;
         display: flex;
         align-items: center;
     }
@@ -599,129 +621,144 @@ footer {
         display: none;
     }
     .search-input-label {
-        margin-left: 10px;
+        margin-left: 0;
     }
     .search-input-label::after {
-        width: 40px;
-        height: 43px;
-        left: 40px;
+        width: 20px;
+        height: 21px;
+        left: 20px;
+        top: 3px;
         background: url("../images/search-mobile-2.png") no-repeat;
+        background-size: contain;
     }
     .add-new-item {
-        margin-left: 410px;
+        margin-left: 215px;
     }
     .add-new-item span {
         display: none;
     }
     .add-new-item::before {
-        width: 36px;
-        height: 35px;
-        top: 5px;
+        width: 18px;
+        height: 18px;
+        top: 3px;
         left: 0;
         background: url("../images/add-mobile.png") no-repeat;
+        background-size: contain;
     }
     .more-info {
-        width: 44px;
-        height: 34px;
-        margin-left: 49px;
+        width: 22px;
+        height: 17px;
+        margin-left: 25px;
+        top: 1px;
         background: url("../images/more-info-mobile.png") no-repeat;
+        background-size: contain;
     }
     .right-block-items {
-        padding: 60px 60px 0 60px;
+        padding: 30px 20px 0 20px;
+        box-sizing: border-box;
     }
     .right-block-item {
-        margin-bottom: 67px;
+        margin-bottom: 33px;
+    }
+    .right-block-user-photo {
+        flex: 0 0 30px;
+        height: 30px;
     }
     .user-info-name {
-        font-size: 28px;
+        font-size: 14px;
     }
     .user-rank {
-        font-size: 24px;
-        left: 175px;
+        font-size: 14px;
+        left: 83px;
         top: -5px;
-        padding: 8px 15px;
+        padding: 4px 8px;
     }
     .comments {
-        font-size: 24px;
-        margin-left: 330px;
+        font-size: 14px;
+        margin-left: 166px;
     }
     .comments::before {
-        width: 20px;
-        height: 19px;
+        width: 10px;
+        height: 10px;
         background: url("../images/icon-comment-mobile.png") no-repeat;
+        background-size: contain;
     }
     .time-comment {
-        font-size: 24px;
+        font-size: 14px;
     }
     .time-comment::before {
-        width: 19px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         background: url("../images/clock-mobile.png") no-repeat;
+        background-size: contain;
     }
     .time-comment,
     .comments {
-        transform: translateY(-23px);
+        transform: translateY(-18px);
     }
     .item-title {
-        font-size: 32px;
-        margin: -20px 7px 4px 1px;
-    }
-    .alert {
-        background: url("../images/alert-mobile.png") no-repeat right;
+        font-size: 20px;
+        margin: -10px 4px 2px 1px;
     }
     .item-description {
-        font-size: 28px;
-        line-height: 35px;
+        font-size: 18px;
+        line-height: 22px;
     }
     .tags {
-        font-size: 24px;
+        font-size: 16px;
     }
     .tag-image {
-        width: 18px;
-        height: 19px;
-        top: 5px;
+        width: 9px;
+        height: 9px;
+        top: 1px;
         background: url("../images/tag-mobile.png") no-repeat;
+        background-size: contain;
     }
     .right-block-controls {
-        padding-bottom: 139px;
-        margin-left: 60px;
+        padding-bottom: 40px;
+        margin-left: 30px;
     }
     .prev-control,
     .next-control {
-        font-size: 28px;
+        font-size: 20px;
         border: 2px solid #99a1b3;
     }
     .prev-control {
-        padding: 28px 42px 31px 31px;
-        margin-right: 131px;
+        padding: 15px 21px 15px 15px;
+        margin-right: 20px;
     }
     .next-control {
-        padding: 29px 32px 31px 42px;
+        padding: 15px 16px 15px 21px;
     }
     .prev-icon {
-        width: 13px;
-        height: 26px;
+        width: 7px;
+        height: 13px;
         background: url("../images/prev-mobile.png") no-repeat;
+        background-size: contain;
     }
     .next-icon {
-        width: 13px;
-        height: 25px;
+        width: 7px;
+        height: 13px;
         background: url("../images/next-mobile.png") no-repeat;
+        background-size: contain;
     }
     .copyright {
         display: none;
     }
+    footer {
+        background-color: #f2f4f8;
+        height: 45px;
+    }
     .footer {
-        top: -81px;
+        top: 0;
     }
     .footer-menu-block {
-        height: 81px;
         box-sizing: border-box;
-        padding: 32px 50px 26px 29px;
+        padding: 16px 25px 13px 15px;
         border: none;
     }
     .footer-menu-item a {
-        font-size: 24px;
+        font-size: 14px;
     }
     .footer-menu {
         width: auto;
